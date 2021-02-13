@@ -1,2 +1,2 @@
 # Java
-Java codes
+Hi, I'm Mateusz and I study at PJATK.
