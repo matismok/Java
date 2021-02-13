@@ -1,0 +1,26 @@
+.menu-button{
+    -fx-background-color: #ccb502;
+    -fx-font-size: 17px;
+}
+.button{
+    -fx-background-color: #692530;
+    -fx-font-size: 17px;
+    -fx-text-fill: white;
+}
+
+.pane{
+    -fx-background-image: url(Puzzles.jpg);
+}
+.pane2{
+    -fx-background-image: url(Perplexing-Puzzles.jpg);
+}
+
+.label-2{
+    -fx-text-fill: #692530;
+    -fx-font-size: 60px;
+    -fx-font-style: italic;
+    -fx-font-family: Gabriola;
+}
+.text{
+    -fx-text-fill: white;
+}

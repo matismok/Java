@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity"
+            maxWidth="-Infinity"
+            prefHeight="600.0"
+            prefWidth="500.0"
+            styleClass="pane"
+            stylesheets="@styles.css"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="MainController">
+    <children>
+      <VBox alignment="CENTER"
+            layoutX="75.0"
+            layoutY="200.0"
+            prefHeight="190.0"
+            prefWidth="150.0"
+            AnchorPane.bottomAnchor="10.0"
+            AnchorPane.leftAnchor="75.0"
+            AnchorPane.rightAnchor="75.0"
+            AnchorPane.topAnchor="200.0">
+         <children>
+
+            <Button fx:id="start"
+                    alignment="CENTER"
+                    mnemonicParsing="false"
+                    onAction="#openNewWindow"
+                    prefHeight="55"
+                    prefWidth="200"
+                    text="Start"
+                    textAlignment="CENTER"
+                    VBox.vgrow="ALWAYS"
+                    styleClass="text">
+
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+
+
+            <MenuButton fx:id="settings"
+                        alignment="CENTER"
+                        mnemonicParsing="false"
+                        prefHeight="55.0"
+                        prefWidth="200.0"
+                        text="Settings"
+                        styleClass="menu-button"
+                        VBox.vgrow="ALWAYS"
+            >
+
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <items>
+                  <CheckMenuItem fx:id="checkMenuItem1"
+                                 selected="false"
+                                 text="3X3" />
+               </items>
+            </MenuButton>
+
+
+            <Button fx:id="exit"
+                    alignment="CENTER"
+                    mnemonicParsing="false"
+                    onAction="#closeWindow"
+                    prefHeight="55.0"
+                    prefWidth="200.0"
+                    text="Exit"
+                    styleClass="text"
+                    VBox.vgrow="ALWAYS">
+
+
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+
+      <Label layoutX="54.0"
+             layoutY="41.0"
+             prefHeight="200.0"
+             prefWidth="400.0"
+             text="Puzzle Game"
+             underline="true"
+             styleClass="label-2">
+         <font>
+            <Font name="Bell MT Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

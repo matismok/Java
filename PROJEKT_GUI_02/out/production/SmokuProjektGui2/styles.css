@@ -1,0 +1,11 @@
+.menu-button{
+    -fx-background-color: #509bff;
+}
+.button{
+    -fx-background-color: #509bff;
+    -fx-font-size: 17px;
+}
+
+.pane{
+    -fx-background-color: #abc453;
+}
